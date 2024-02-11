@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+div.test-container {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+div.test-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+div.test-container form {
+    margin-bottom: 20px;
+}
+
+div.test-container form div.question-container {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+div.test-container form div.question-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+div.test-container form div.question-container label:first-child {
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+div.test-container button,
+div.test-container a {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+div.test-container button:hover,
+div.test-container a:hover {
+    background-color: #0056b3;
+}
+
+div.test-container button i,
+div.test-container a i {
+    font-size: 25px;
+    margin-right: 10px;
+}

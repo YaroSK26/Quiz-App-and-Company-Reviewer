@@ -1,0 +1,162 @@
+@import url("./styles/general.css");
+@import url("./styles/header.css");
+@import url("./styles/footer.css");
+
+/*-----------------------------------------------------*/
+
+main.banner {
+    height: 80vh;
+    padding: 20px;
+    margin: auto;
+}
+
+main.banner section.main-container {
+    width: 100%;
+    display: grid;
+    padding: 0 30px;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+main.banner section.main-container div.text {
+    background: #0066ff41;
+
+    height: 100%;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #02111d,
+        -5px -5px 10px #0a4373;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 10px 0 0 10px;
+}
+
+main.banner section.main-container div.text h1 {
+    font-size: 50px;
+    color: #7bff00;
+    text-shadow: 1px 1px 4px #000000;
+    background-color: rgba(255, 255, 255, 0.774);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+main.banner section.main-container div.text p {
+    font-size: 35px;
+    font-weight: bold;
+    color: #008cff;
+    text-shadow: 1px 1px 0px #000000;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 0 0 10px 10px;
+    padding: 5px 15px;
+}
+
+main.banner section.main-container img {
+    width: 700px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 10px #02111d,
+        -5px -5px 10px #0a4373;
+}
+
+/*----------------------------------------------------------*/
+section.info {
+    height: 30vh;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    background: #0066ff9c;
+
+    box-shadow: 5px 5px 10px #ffffff,
+        0, 0, 0;
+}
+
+section.info div.company-info {
+    padding: 0 30px;
+
+    width: 100%;
+    display: grid;
+    padding: 0 30px;
+    gap: 20px;
+    margin: auto;
+}
+
+section.info div.company-info div.text {
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+section.info div.company-info div.text h2 {
+    background-color: rgba(255, 255, 255, 0.596);
+    color: #7bff00;
+    border-bottom: 5px solid #7bff00;
+    margin-bottom: 0;
+    padding: 5px 20px;
+    font-size: 40px;
+    text-shadow: 2px 1px 5px #000000;
+    border-radius: 10px 10px 0 0;
+}
+
+section.info div.company-info div.text p {
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+    text-shadow: 1px 1px 0px #000000;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 0 0 10px 10px;
+    padding: 5px 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/*----------------------------------------------------------*/
+section.another-info {
+    min-height: 30vh;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    background: #7bff00b6;
+
+    box-shadow: 5px 5px 10px #ffffff,
+        0, 0, 0;
+}
+
+section.another-info div.product-info {
+    width: 100%;
+    padding: 0 30px;
+    display: grid;
+    gap: 20px;
+    margin: auto;
+}
+
+section.another-info div.product-info div.text {
+    height: 100%;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+section.another-info div.product-info div.text img {
+    width: 100%;
+    object-fit: cover;
+}
+
+section.another-info div.product-info div.text p {
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.856);
+    border-radius: 10px;
+    padding: 10px 20px;
+    line-height: 1.6;
+    text-align: justify;
+}

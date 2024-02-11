@@ -1,0 +1,103 @@
+@import url("./styles/general.css");
+@import url("./styles/header.css");
+@import url("./styles/footer.css");
+
+main {
+    min-height: 80vh;
+    padding: 20px;
+    margin: auto;
+}
+
+main section.main-container {
+    width: 100%;
+
+    padding: 20px 30px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.635);
+    border-radius: 3px;
+}
+
+main section.main-container div.titleAndManagement {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 2px solid #bbb;
+    padding: 10px 20px;
+}
+
+main section.main-container div.titleAndManagement h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+
+main section.main-container div.titleAndManagement a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 1px 0px #000;
+    font-size: 22px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: rgb(51, 156, 255);
+}
+
+main section.main-container div.titleAndManagement a i {
+    margin-right: 7px;
+}
+
+main section.main-container div.allCompanies {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 3px;
+}
+
+main section.main-container div.allCompanies div.company {
+    border: 1px solid black;
+    padding: 20px 30px;
+    border-radius: 3px;
+    background: #ffffff;
+    box-shadow: 2px 2px 5px #666666,
+        -1px -1px 1px #666666;
+    height: 275px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main section.main-container div.allCompanies div.company h2.company-name {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 5px #fff;
+    width: fit-content;
+}
+
+main section.main-container div.allCompanies div.company p.company-info {
+    text-shadow: 1px 1px 5px #fff;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+main section.main-container div.allCompanies div.company button {
+    padding: 10px 15px;
+    font-size: 17px;
+    background-color: rgb(0, 110, 255);
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 7px;
+    text-shadow: 1px 1px 5px #222;
+    margin-top: auto;
+}

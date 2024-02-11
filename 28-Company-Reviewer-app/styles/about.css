@@ -1,0 +1,54 @@
+@import url("/styles/general.css");
+@import url("/styles/header.css");
+@import url("/styles/footer.css");
+
+main.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main.about-us h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+    border-bottom: 2px solid #444;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+main.about-us h3 {
+    color: #666;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+main.about-us p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+main.about-us ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+main.about-us ul li {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+/* Štýly pre sekcie */
+main.about-us section#about-company,
+main.about-us section#mission-vision,
+main.about-us section#core-values,
+main.about-us section#team {
+    margin-bottom: 40px;
+}

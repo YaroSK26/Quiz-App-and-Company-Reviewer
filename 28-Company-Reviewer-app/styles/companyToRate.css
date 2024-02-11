@@ -1,0 +1,289 @@
+@import url("./styles/general.css");
+@import url("./styles/header.css");
+@import url("./styles/footer.css");
+
+main {
+    min-height: 80vh;
+    padding: 20px;
+    margin: auto;
+}
+
+main section.main-container {
+    width: 100%;
+    display: grid;
+    padding: 20px 30px;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.637);
+}
+
+main h2 {
+    border-bottom: 1px solid gray;
+    width: fit-content;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+
+/*------------------------------------------*/
+main section.main-container div.company-here div.base-update,
+main section.main-container div.company-here div.base {
+    margin-bottom: 0;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px 10px 0 0;
+
+    display: flex;
+    align-items: center;
+}
+
+main section.main-container div.company-here div.base {
+    display: block;
+    padding: 20px;
+}
+
+main section.main-container div.company-here div.base-update {
+    display: block;
+}
+
+main section.main-container div.company-here div.base-update h2 span {
+    padding: 10px 10px;
+    min-width: 100px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+main section.main-container div.company-here div.base-update h2 span.editable-span {
+    border: 1px solid black;
+}
+
+main section.main-container div.company-here div.base-update div.buttons {
+    min-height: 50px;
+
+    width: 550px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+main section.main-container div.company-here div.base-update div.buttons a,
+main section.main-container div.company-here div.base a {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 19px;
+    margin-left: 15px;
+    border-radius: 7px;
+    line-height: 1.7;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid black;
+}
+
+
+main section.main-container div.company-here div.base-update div.buttons a {
+    margin-left: 0;
+}
+
+main section.main-container div.company-here div.base-update div.buttons a:hover,
+main section.main-container div.company-here div.base a:hover {
+    color: #fff;
+    background-color: #000000;
+    border: 1px solid #0d0f0f;
+}
+
+main section.main-container div.company-here div.base-update div.buttons a i,
+main section.main-container div.company-here div.base a i {
+    margin-right: 5px;
+}
+
+main section.main-container div.company-here div.base-update div.buttons button {
+    margin: 5px 0;
+    padding: 0;
+    font-size: 19px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    width: fit-content;
+}
+
+main section.main-container div.company-here div.base-update div.buttons button.cancel,
+main section.main-container div.company-here div.base-update div.buttons button.save {
+    display: none;
+}
+
+main section.main-container div.company-here div.base-update div.buttons button i {
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+main section.main-container div.company-here div.base-update div.buttons button.edit:hover,
+main section.main-container div.company-here div.base-update div.buttons button.edit:hover i,
+main section.main-container div.company-here div.base-update div.buttons button.save:hover,
+main section.main-container div.company-here div.base-update div.buttons button.save:hover i {
+    color: #00aeff;
+}
+
+main section.main-container div.company-here div.base-update div.buttons button.delete:hover,
+main section.main-container div.company-here div.base-update div.buttons button.delete:hover i,
+main section.main-container div.company-here div.base-update div.buttons button.cancel:hover,
+main section.main-container div.company-here div.base-update div.buttons button.cancel:hover i {
+    color: red;
+}
+
+/*------------------------------------------------------------------------------------*/
+main section.main-container div.company-here .company-details {
+    margin: 20px 0;
+
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 0 0 10px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+main section.main-container div.company-here div.company-details h2 {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+main section.main-container div.company-here .company-details div#companyInfoUpdate,
+main section.main-container div.company-here .company-details p#companyInfo {
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 350px;
+    overflow-y: auto;
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+main section.main-container div.company-here .company-details div#companyInfoUpdate {
+    min-height: 350px;
+    padding: 10px;
+}
+
+/*------------------------------------------*/
+
+main section.main-container .reviews-container {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+main section.main-container .reviews-container h2 {
+    font-style: italic;
+}
+
+main section.main-container .reviews-container .review-list {
+    list-style: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+main section.main-container .reviews-container .review-list>li {
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main section.main-container .reviews-container .review-list>li p {
+    line-height: 1.6;
+}
+
+/* Pridaná farba pozadí pre každý li v recenzii */
+main section.main-container .reviews-container .review-list>li:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+main section.main-container .reviews-container .review-list>li div {
+    margin-top: auto;
+}
+
+main section.main-container .reviews-container .review-list>li div button {
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 7px;
+    background-color: rgb(255, 46, 46);
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+main section.main-container .reviews-container .review-list>li div button:hover {
+    background-color: rgb(255, 102, 102);
+}
+
+main section.main-container .reviews-container .review-list li {
+    list-style-type: none;
+}
+
+main section.main-container .reviews-container .review-list li p.good ul,
+main section.main-container .reviews-container .review-list li p.bad ul {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+main section.main-container .reviews-container .review-list li p.good ul li:before {
+    content: '✅ ';
+}
+
+main section.main-container .reviews-container .review-list li p.bad ul li:before {
+    content: '❌ ';
+}
+
+/*------------------------------------------*/
+
+main section.main-container div.add-review-container {
+    background-color: #f9f9f9;
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+main section.main-container div.add-review-container h2 {
+    font-style: italic;
+}
+
+main section.main-container div.add-review-container form {
+    margin: 20px 10px;
+}
+
+main section.main-container div.add-review-container form label,
+main section.main-container div.add-review-container form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+main section.main-container div.add-review-container form input {
+    padding: 10px 15px;
+    width: 250px;
+}
+
+main section.main-container div.add-review-container form button {
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 7px;
+    background-color: #00aeff;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+main section.main-container div.add-review-container form button:hover {
+    background-color: #22b9ff;
+}

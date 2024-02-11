@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/companyToRate.css">
+    <link rel="stylesheet" href="../../style.css">
+    <title>FirmReviewr | Company to manage</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-container">
+            <img src="../../assets/logo-black-bg-removebg-preview.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../pages/companies.html">Companies</a></li>
+                    <li><a href="../../pages/about.html">About</a></li>
+                    <li><a href="../../pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="main-container">
+            <div class="company-here">
+                <div class="base-update">
+                    <div class="buttons">
+                        <a href="./companyManagement.html">
+                            <i class="fa-solid fa-arrow-left"></i>Back to admin companies
+                        </a>
+
+                        <button class="edit">
+                            <i class="fa-solid fa-pen-to-square fa-2x"></i><br>Edit
+                        </button>
+
+                        <button class="cancel">
+                            <i class="fa-solid fa-x fa-2x"></i><br>Cancel
+                        </button>
+
+                        <button class="delete">
+                            <i class="fa-solid fa-trash fa-2x"></i><br>Delete
+                        </button>
+
+                        <button class="save">
+                            <i class="fa-solid fa-floppy-disk fa-2x"></i><br>Save
+                        </button>
+                    </div>
+                    
+                    <h2>Company: <span id="companyName"></span></h2>
+                </div>
+                <div class="company-details">
+                    <h2>Company info:</h2>
+                    <div id="companyInfoUpdate"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-container">
+            <div class="logo">
+                <img src="../../assets/logo-black-bg-removebg-preview.png" alt="Footer Logo">
+            </div>
+            <p>&copy; 2023 FirmReviewr</p>
+        </section>
+    </footer>
+
+        <script type="module" src="../../dist/admin/scripts/companyAdmin.js"></script>
+
+</body>
+
+</html>
